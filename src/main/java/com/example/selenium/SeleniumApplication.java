@@ -17,11 +17,7 @@ public class SeleniumApplication {
         chromeDriver.findElement(By.xpath("//input[@type='password']")).sendKeys("password");
         chromeDriver.findElement(By.id("u_0_b")).click();
 
-
-
     }
-
-
 }
 
 
