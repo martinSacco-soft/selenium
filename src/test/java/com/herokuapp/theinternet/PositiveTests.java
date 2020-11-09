@@ -1,5 +1,7 @@
 package com.herokuapp.theinternet;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,15 +24,18 @@ public class PositiveTests {
 		driver.manage().window().maximize();
 		
 		//enter username
-		
+		WebElement username = driver.findElement(By.id("username"));
 		
 		//enter password
+		WebElement password = driver.findElement(By.name("password"));
+
 		//click login button
+		WebElement logInButton = driver.findElement(By.tagName("button"));
 		
-		//verificatins:
+		//verifications:
 		//new url
 		//logout button is visible
-		//succesful login message
+		//successful login message
 
 		//close browser
 		driver.quit();
